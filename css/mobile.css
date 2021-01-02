@@ -19,20 +19,25 @@ body{
 header{
     width: 100vw;
     height: 30rem;
-    background-color: rgb(65, 141, 141);
 }
 
 header nav{
-    display: flex;
+    display: inline-block;
     justify-content: center;
 }
 
-header nav .nav-right-section{
-    background-color: cyan;
+header .banner{
+    background-color: rgb(229, 238, 196);
     width: 100vw;
-    height: auto;
+    height: 84%;
+}
+
+header nav .nav-right-section{
+    background-color: white;
+    width: 100vw;
+    height: 16%;
     display: flex;
-    justify-content: space-around; /* alinea horizontalmente */
+    justify-content: flex-end; /* alinea horizontalmente */
     align-items: center; /* alinea verticalmente */
 }
 
@@ -42,6 +47,7 @@ header nav .nav-right-section .icon{
     background-size: contain;
     width: 2.5rem;
     height: 2.5rem;
+    margin: 0.5rem 1.5rem 0.5rem 0;
 }
 
 header nav .nav-right-section .menu-icon{
@@ -50,22 +56,11 @@ header nav .nav-right-section .menu-icon{
 }
 header nav .nav-right-section .buscar-icon{
     background-image: url(/img/search.png);
-    order: 3;
-}
-header nav .nav-right-section .logo-icon{
-    background-image: url(/img/logo_quemis.png);
     order: 2;
-    width: 8rem;
-    height: 8rem;
 }
 header nav .nav-right-section .carrito-icon{
     background-image: url(/img/cart.png);
-    order: 4;
-}
-
-header nav .nav-right-section a{
-    margin-right: 1rem;
-    color: #000000;
+    order: 3;
 }
 
 .container{

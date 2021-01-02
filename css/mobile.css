@@ -2,6 +2,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 html{
@@ -10,13 +13,59 @@ html{
 
 body{
     font-size: 1.6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.banner{
-    display: block;
-    padding: 10rem;
-    margin-bottom: 0.5rem;
-    background-color: darkcyan;
+header{
+    width: 100vw;
+    height: 30rem;
+    background-color: rgb(65, 141, 141);
+}
+
+header nav{
+    display: flex;
+    justify-content: center;
+}
+
+header nav .nav-right-section{
+    background-color: cyan;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: space-around; /* alinea horizontalmente */
+    align-items: center; /* alinea verticalmente */
+}
+
+header nav .nav-right-section .icon{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+header nav .nav-right-section .menu-icon{
+    background-image: url(/img/menu.png);
+    order: 1;
+}
+header nav .nav-right-section .buscar-icon{
+    background-image: url(/img/search.png);
+    order: 3;
+}
+header nav .nav-right-section .logo-icon{
+    background-image: url(/img/logo_quemis.png);
+    order: 2;
+    width: 8rem;
+    height: 8rem;
+}
+header nav .nav-right-section .carrito-icon{
+    background-image: url(/img/cart.png);
+    order: 4;
+}
+
+header nav .nav-right-section a{
+    margin-right: 1rem;
+    color: #000000;
 }
 
 .container{
